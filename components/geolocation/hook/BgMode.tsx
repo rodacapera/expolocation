@@ -76,8 +76,11 @@ const BgMode = ({ endPoint }: { endPoint: string }) => {
         // 'X-FOO': 'bar',
       },
       params: {
-        user_id: 3,
-        device_id: 4,
+        mac_address: 3, //pending
+        location: {
+          latitude: location.coords.latitude,
+          longitude: location.coords.longitude,
+        },
         // <-- Optional HTTP params
         // auth_token: 'maybe_your_server_authenticates_via_token_YES?',
       },
