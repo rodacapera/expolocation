@@ -81,6 +81,7 @@ const BgMode = ({ endPoint }: { endPoint: string }) => {
           latitude: location.coords.latitude,
           longitude: location.coords.longitude,
         },
+        date: new Date(),
         // <-- Optional HTTP params
         // auth_token: 'maybe_your_server_authenticates_via_token_YES?',
       },
